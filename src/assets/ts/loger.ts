@@ -37,7 +37,6 @@ class Task {
 
 	finishTimer(){
 		clearInterval(this.timer);
-		// return new Date(this.elapsedTime);
 	}
 
 	updateTask(id, time){
@@ -45,14 +44,10 @@ class Task {
 		let element = document.querySelector('[data-task-id="'+id+'"]'),
 			clock = element.querySelector('.js-clock');
 
-
 		clock.innerHTML = ' - '+time;
-		// console.log(element);
-		// console.log(document.querySelector(`[date-task-id="${id}"]`));
 	}
 
 }
-
 
 class Loger {
 	id: number;
@@ -103,8 +98,7 @@ class Loger {
 			desc = (<HTMLInputElement>document.getElementById('task-description')).value,
 			descStr = desc != '' ? desc : 'Lorem ipsum dolor sit amet.',
 			task = new Task( this.id, titleStr, descStr );
-		// console.log(desc);
-		// console.log(title);
+
 		task.startTimer();
 		this.tasks.push( task );
 		this.id++;
@@ -124,7 +118,6 @@ class Loger {
 		});
 
 		// let index = this.tasks.indexOf(toFinish[0]);
-
 		// this.tasks[index].finishTimer();
 	}
 
