@@ -1,5 +1,5 @@
-# gulp-dev-environment
-Front-end dev environment with SASS, PUG and TypeScript
+# TIME LOGER
+Variation about TODO app. TypeScript, es2015, pug
 
 1. pull
 2. npm install
