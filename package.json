@@ -1,7 +1,7 @@
 {
-  "name": "gulp-dev-environment",
+  "name": "time-loger",
   "version": "1.0.0",
-  "description": "Gulp with Babel, TypeScript, Pug, Sass, LiveReload",
+  "description": "Time loger app to manage task & time",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
