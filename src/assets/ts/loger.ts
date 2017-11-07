@@ -41,7 +41,7 @@ class Task {
 	}
 
 	updateTask(id, time){
-		console.log(id);
+		// console.log(id);
 		let element = document.querySelector('[data-task-id="'+id+'"]'),
 			clock = element.querySelector('.js-clock');
 
@@ -103,12 +103,12 @@ class Loger {
 			desc = (<HTMLInputElement>document.getElementById('task-description')).value,
 			descStr = desc != '' ? desc : 'Lorem ipsum dolor sit amet.',
 			task = new Task( this.id, titleStr, descStr );
-		console.log(desc);
-		console.log(title);
+		// console.log(desc);
+		// console.log(title);
 		task.startTimer();
 		this.tasks.push( task );
 		this.id++;
-		console.log(this.tasks);
+		// console.log(this.tasks);
 	}
 
 	removeTask(id: number) {
